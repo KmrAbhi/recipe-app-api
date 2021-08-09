@@ -3,6 +3,9 @@ make a requirements.txt file and then head to terminal, switch to project direct
 create a docker compose file -->docker-compose.yml  -> this contains the configurations for all the services that make up our project.
 volume allows us to get the updates to our project that we make into docker image real time 
 docker-compose run app sh -c "django-admin.py startproject app ." # command to start django project
+docker-compose run app sh -c "python manage.py startapp core ." # command to start an app within a project
 docker-compose run app sh -c "python manage.py test"
 ##just a small change to test travis-ci 
+
+docker-compose run app sg -c "python manage.py makemigrations core"
 
