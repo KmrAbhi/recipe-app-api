@@ -7,5 +7,6 @@ docker-compose run app sh -c "python manage.py startapp core ." # command to sta
 docker-compose run app sh -c "python manage.py test"
 ##just a small change to test travis-ci 
 
-docker-compose run app sg -c "python manage.py makemigrations core"
+docker-compose run app sh -c "python manage.py makemigrations core"
+
 
